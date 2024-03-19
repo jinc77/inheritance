@@ -1,0 +1,39 @@
+public class Meat extends Food {
+    private String type;
+    private double cookingTemp;
+    private int cookingMin;
+    public Meat(String name, String vendor, int amount, double price, String type, double cookingTemp, int cookingMin) {
+        super(name, vendor, amount, price);
+        this.type = type;
+        this.cookingTemp = cookingTemp;
+        this.cookingMin = cookingMin;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+    public double getCookingTemp() {
+        return cookingTemp;
+    }
+
+    public void setCookingTemp(double temp) {
+        this.cookingTemp = temp;
+    }
+
+    public int getCookingMin() {
+        return cookingMin;
+    }
+
+    public void setCookingMin(int time) {
+        cookingMin = time;
+    }
+
+    public String toString() {
+        return "You bought " + super.getAmount() + " " + type + " " + super.getName() + " at the " + super.getVendor() + " for $" + super.getPrice() + " and you need to cook at " + cookingTemp + " degrees for " + cookingMin + " minutes";
+
+    }
+}
