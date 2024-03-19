@@ -1,0 +1,27 @@
+public class Fruit extends Food {
+    private boolean needToPeel;
+
+    public Fruit(String name, String vendor, int amount, double price, boolean needToPeel) {
+        super(name, vendor, amount, price);
+        this.needToPeel = needToPeel;
+    }
+
+    public boolean getPeel() {
+        return needToPeel;
+    }
+
+    public void setPeel(boolean needToPeel) {
+        this.needToPeel = needToPeel;
+    }
+
+    public String toString() {
+        if (needToPeel) {
+            return ("You bought " + super.getAmount() + " " + super.getName() + " at the " + super.getVendor() + " for $" + super.getPrice() + ". You need to peel the " + super.getName());
+
+        }
+        else {
+            return ("You bought " + super.getAmount() + " " + super.getName() + " at the " + super.getVendor() + " for $" + super.getPrice());
+
+        }
+    }
+}
