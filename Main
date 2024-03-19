@@ -1,0 +1,14 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        // to see how IntelliJ IDEA suggests fixing it.
+            Food food = new Food("Lasagna", "supermarket", 2, 20.00);
+            System.out.println(food);
+            Meat meat = new Meat("Steak", "butcher", 4, 68.20, "beef", 230, 10);
+            System.out.println(meat);
+            Fruit fruit = new Fruit("Durian", "farmer's market", 1, 12.35, true);
+            System.out.println(fruit);
+    }
+}
